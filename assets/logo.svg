@@ -1,0 +1,52 @@
+<svg width="52" height="52" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3.5" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="glow-soft">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Shield fondo ligeramente mas claro que el bg -->
+  <path d="M100 14 L172 46 L172 112 Q172 164 100 186 Q28 164 28 112 L28 46 Z"
+        fill="#0c1a2e"/>
+
+  <!-- Shield borde cyan brillante con glow -->
+  <path d="M100 14 L172 46 L172 112 Q172 164 100 186 Q28 164 28 112 L28 46 Z"
+        fill="none" stroke="#00cfff" stroke-width="3" filter="url(#glow)"/>
+
+  <!-- Linea interior sutil -->
+  <path d="M100 26 L158 52 L158 112 Q158 150 100 170"
+        fill="none" stroke="#00cfff" stroke-width="1" opacity="0.25"/>
+
+  <!-- Circuit dots con glow -->
+  <circle cx="52" cy="60" r="3.5" fill="#00cfff" opacity="0.8" filter="url(#glow-soft)"/>
+  <line x1="35" y1="60" x2="52" y2="60" stroke="#00cfff" stroke-width="1.5" opacity="0.5"/>
+
+  <circle cx="148" cy="60" r="3.5" fill="#00cfff" opacity="0.8" filter="url(#glow-soft)"/>
+  <line x1="148" y1="60" x2="165" y2="60" stroke="#00cfff" stroke-width="1.5" opacity="0.5"/>
+
+  <!-- Shackle azul claro -->
+  <path d="M70 118 L70 90 Q70 62 100 62 Q130 62 130 90 L130 118"
+        stroke="#60a5fa" stroke-width="14" fill="none" stroke-linecap="round"
+        filter="url(#glow-soft)"/>
+
+  <!-- Lock body azul vibrante -->
+  <rect x="56" y="112" width="88" height="60" rx="14" fill="#2563eb"/>
+  <rect x="56" y="112" width="88" height="60" rx="14"
+        fill="none" stroke="#60a5fa" stroke-width="2"/>
+
+  <!-- Keyhole blanco para maximo contraste -->
+  <circle cx="100" cy="137" r="11" fill="#ffffff"/>
+  <rect x="96" y="137" width="8" height="20" rx="4" fill="#ffffff"/>
+
+</svg>
