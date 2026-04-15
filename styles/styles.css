@@ -214,11 +214,32 @@ nav ul li:hover {
 .group-btn {
   display: flex;
   gap: 2rem;
+  margin-top: 1rem;
 }
 
 .btn {
   border-radius: 100px;
-  background-color: #0034c2;
-  padding: 1rem 2rem;
+  padding: 0.65rem 1.75rem;
   border: 1px solid;
+  text-decoration: none;
+}
+
+.info-btn{
+  background-color: var(--color-primary-text);
+  color: var(--color-primary);
+}
+
+.std-btn{
+  background-color: var(--color-enfasis);
+  color: var(--color-primary);
+}
+
+.test{
+  width: 100%;
+  background-color: var(--test-color);
+  height: 800px;
+}
+
+.test-section{
+  background-color: #0034c2;
 }
