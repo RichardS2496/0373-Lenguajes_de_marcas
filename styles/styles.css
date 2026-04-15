@@ -210,3 +210,15 @@ nav ul li:hover {
   width: 80%;
   font-size: 1.125rem;
 }
+
+.group-btn {
+  display: flex;
+  gap: 2rem;
+}
+
+.btn {
+  border-radius: 100px;
+  background-color: #0034c2;
+  padding: 1rem 2rem;
+  border: 1px solid;
+}
