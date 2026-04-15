@@ -188,19 +188,25 @@ nav ul li:hover {
 .hero-content h1 {
   text-align: center;
   padding: 0;
-  background: linear-gradient(
+  color: var(--color-primary-text);
+  /* background: linear-gradient(
     90deg,
-    var(--color-enfasis) 0%,
-    color-mix(in srgb, var(--color-enfasis) 50%, white) 100%
+    var(#d3d3d3) 100%,
+    color-mix(in srgb, var(--color-primary-text) 50%, white) 100%
   );
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  color: transparent;
+  color: transparent; */
+}
+
+.hero-content h1 span {
+  color: var(--color-enfasis);
 }
 
 .hero-content p {
   text-align: center;
   text-wrap: balance;
-  width: 90%;
+  width: 80%;
+  font-size: 1.125rem;
 }
