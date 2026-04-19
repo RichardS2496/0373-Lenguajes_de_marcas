@@ -34,6 +34,9 @@
   --backdrop-filter-element: blur(12px);
   --webkit-bd-filter-element: blur(12px);
 }
+a {
+  text-decoration: none;
+}
 
 h1 {
   font-size: var(--fs-xl);
@@ -138,6 +141,11 @@ nav ul li:hover {
   /* transition: 0.5s; */
 }
 
+.main-layout {
+  max-width: var(--max-width-default);
+  margin: 0 auto;
+}
+
 .bg-layout,
 .bg-layout::before,
 .bg-layout::after {
@@ -173,8 +181,6 @@ nav ul li:hover {
 }
 
 .hero-content {
-  max-width: var(--max-width-default);
-  margin: 0 auto;
   position: relative;
   height: 80vh;
   display: flex;
@@ -245,11 +251,13 @@ nav ul li:hover {
 }
 
 .info-btn {
-  color: var(--color-primary);
+  color: var(--color-primary-text);
   width: fit-content;
   display: flex;
   justify-content: space-between;
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: var(--bg-blur-element);
+  /* background-color: rgba(255, 255, 255, 0.9); */
+  border: 1px solid #ffffff;
   align-items: center;
   position: relative;
   transition: var(--std-transition);
@@ -316,7 +324,6 @@ nav ul li:hover {
 .blog-section-content {
   width: 100%;
   position: relative;
-  max-width: var(--max-width-default);
   margin: 0 auto;
   padding: 4rem 0;
   gap: 3rem;
@@ -352,6 +359,7 @@ nav ul li:hover {
 
 .blog-section-content h2 {
   text-align: center;
+  text-shadow: var(--std-text-shadow);
 }
 
 .blog-section-content p {
@@ -382,6 +390,7 @@ nav ul li:hover {
 }
 
 .blog-grid-element {
+  width: 100%;
   background-color: var(--bg-blur-element);
   backdrop-filter: var(--backdrop-filter-element);
   -webkit-backdrop-filter: var(--webkit-bd-filter-element);
@@ -394,6 +403,10 @@ nav ul li:hover {
 
 .blog-post {
   grid-area: blog-post;
+  transition: var(--std-transition);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
 .blog-post img {
@@ -414,4 +427,129 @@ nav ul li:hover {
 
 .blog-services-link {
   grid-area: blog-services-link;
+}
+
+.service-section {
+  padding: 4rem 0;
+}
+
+.service-section-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.service-section-content h2 {
+  text-align: center;
+}
+
+.service-section-content p {
+  text-align: center;
+}
+
+.plans-section-grid {
+  width: 80%;
+  margin-top: 2rem;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: auto;
+  grid-template-areas: "plan-1 plan-2 plan-3";
+}
+
+.plan-1 {
+  grid-area: plan-1;
+}
+
+.plan-2 {
+  grid-area: plan-2;
+  /* transform: translateY(-2rem); */
+}
+.plan-3 {
+  grid-area: plan-3;
+}
+
+.plans-elements {
+  width: 100%;
+  background-color: var(--bg-blur-element);
+  border-radius: var(--border-std);
+  padding: 2rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: var(--std-transition);
+  overflow: hidden;
+  position: relative;
+}
+.flex-element-card {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 0.5rem;
+}
+
+.plans-elements h4 {
+  text-align: left;
+  color: var(--color-primary-text);
+  font-weight: 500;
+  font-size: 1.35rem;
+  text-shadow: var(--std-text-shadow);
+}
+
+.plans-elements p {
+  text-align: left;
+  color: #bebebe;
+  text-wrap: balance;
+}
+
+.recommeded-badge {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0.5rem;
+  font-size: 12px;
+  background-color: var(--color-enfasis);
+  font-weight: 500;
+}
+
+.price-plans {
+  color: var(--color-primary-text);
+  font-weight: 600;
+}
+
+.price-plans span {
+  font-size: 12px;
+  font-weight: 400;
+  color: #bebebe;
+}
+
+.items-plans {
+  list-style: disc;
+  padding: 0 1.25rem;
+  margin-top: 1rem;
+  color: #bebebe;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.price-btn {
+  margin-top: 1.2rem;
+  transition: var(--std-transition);
+  background-color: var(--bg-blur-element);
+  text-align: center;
+  color: #bebebe;
+}
+
+.plans-elements:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.2);
+}
+
+.plans-elements:hover .price-btn {
+  /* background-color: rgb(0, 207, 255); */
+  background-color: rgba(0, 207, 255, 0.95);
+  color: var(--color-primary);
+  font-weight: 500;
 }

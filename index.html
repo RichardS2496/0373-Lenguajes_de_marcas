@@ -27,8 +27,8 @@
         <ul>
           <li><a href="/#inicio">Inicio</a></li>
           <li><a href="/#blog">Blog</a></li>
-          <li><a href="/#nosotros">Nosotros</a></li>
           <li><a href="/#servicios">Servicios</a></li>
+          <li><a href="/#nosotros">Nosotros</a></li>
           <li><a href="/#contacto">Contacto</a></li>
         </ul>
       </nav>
@@ -69,70 +69,139 @@
     </header>
     <main>
       <div class="bg-layout"></div>
-      <section class="main-hero">
-        <div class="hero-content">
-          <div class="hero-text-section">
-            <span class="main-hero-span">Servicios de CiberSeguridad</span>
-            <h1>Tu <span>seguridad digital</span> blindada</h1>
-            <p>
-              En ShieldSecurity monitorizamos, detectamos y neutralizamos
-              ataques en tiempo real. Tu infraestructura protegida las 24 horas.
+      <div class="main-layout">
+        <section class="main-hero">
+          <div class="hero-content">
+            <div class="hero-text-section">
+              <span class="main-hero-span">Servicios de CiberSeguridad</span>
+              <h1>Tu <span>seguridad digital</span> blindada</h1>
+              <p>
+                En ShieldSecurity monitorizamos, detectamos y neutralizamos
+                ataques en tiempo real. Tu infraestructura protegida las 24
+                horas.
+              </p>
+              <div class="group-btn">
+                <a class="btn info-btn" href="">Servicios</a>
+                <!-- <a class="btn std-btn" href="">Contacto</a> -->
+              </div>
+            </div>
+            <div class="img-hero-section">
+              <img src="./assets/hero-test-content.png" alt="" />
+            </div>
+          </div>
+        </section>
+        <section class="blog-section">
+          <div class="blog-section-content">
+            <span class="badge-element">Lo nuevo</span>
+            <h2 class="titles-section">
+              Entérate de las últimas novedades que
+              <span class="main-hero-span">ShieldSecurity</span> tiene para ti
+            </h2>
+            <p class="description-text-section">
+              Aprende a detectar, prevenir y defenderte de amenazas digitales
+              con información clara, actualizada y práctica para proteger lo que
+              más importa.
             </p>
-            <div class="group-btn">
-              <a class="btn info-btn" href="">Servicios</a>
-              <!-- <a class="btn std-btn" href="">Contacto</a> -->
+            <div class="blog-grid-section">
+              <a href="#" class="blog-post">
+                <div class="blog-post blog-grid-element">
+                  <img src="./assets/post-img.png" alt="" />
+                  <h3>
+                    Inditex, Booking y Basic-Fit: Hackeo y robo de información
+                    de usuarios
+                  </h3>
+                  <p>
+                    Ciberataques recientes han expuesto datos masivos,
+                    evidenciando fallos de seguridad a nivel global. Datos
+                    personales y financieros en la mira de los hackers.
+                  </p>
+                  <a class="btn info-btn" href="">Leer más</a>
+                </div>
+              </a>
+
+              <div class="blog-page-link blog-grid-element">
+                <h2>Blog</h2>
+                <p>
+                  Más noticias, consejos y novedades sobre el mundo de la
+                  ciberseguridad en nuestra sección
+                </p>
+                <a class="btn std-btn" href="">Visitar blog</a>
+              </div>
+              <div class="blog-services-link blog-grid-element">
+                <h3>¡Protégete ante ciberataques!</h3>
+                <p>
+                  No esperes a ser una víctima más, toma el control y mantente
+                  un paso adelante.
+                </p>
+                <a class="btn info-btn" href="">Contratar</a>
+              </div>
             </div>
           </div>
-          <div class="img-hero-section">
-            <img src="./assets/hero-test-content.png" alt="" />
+        </section>
+        <section class="service-section">
+          <div class="service-section-content">
+            <span class="badge-element">Planes y Servicios</span>
+            <h2 class="titles-section">
+              En
+              <span class="main-hero-span">ShieldSecurity</span> nos preocupamos
+              y ajustamos por ti.
+            </h2>
+            <p class="description-text-section">
+              Conoce nuestros planes y servicios que tenemos disponibles para
+              proteger tu presencia online.
+            </p>
+            <section class="plans-section-grid">
+              <article class="plan-1 plans-elements">
+                <div class="flex-element-card">
+                  <h4>Escudo Basico</h4>
+
+                  <h3 class="price-plans">€20<span> / mes</span></h3>
+                  <p>Ideal para autónomos y pequeñas empresas.</p>
+                  <ul class="items-plans">
+                    <li>Auditoría de seguridad inicial</li>
+                    <li>Análisis de vulnerabilidades básico</li>
+                    <li>Informe de riesgos</li>
+                    <li>Soporte por email 24/7</li>
+                  </ul>
+                </div>
+
+                <a class="btn price-btn" href="">Contratarlo ahora</a>
+              </article>
+              <article class="plan-2 plans-elements">
+                <span class="recommeded-badge">Recomendado</span>
+                <div class="flex-element-card">
+                  <h4>Centinela Pro</h4>
+
+                  <h3 class="price-plans">€50<span> / mes</span></h3>
+                  <p>Protección activa y respuesta rápida.</p>
+                  <ul class="items-plans">
+                    <li>Todo lo del plan Escudo Básico</li>
+                    <li>Monitorización 24/7 de amenazas</li>
+                    <li>Firewall gestionado</li>
+                    <li>Soporte prioritario</li>
+                  </ul>
+                </div>
+                <a class="btn price-btn" href="">Contratarlo ahora</a>
+              </article>
+              <article class="plan-3 plans-elements">
+                <div class="flex-element-card">
+                  <h4>Fortaleza Enterprise</h4>
+
+                  <h3 class="price-plans">€100<span> / mes</span></h3>
+                  <p>Solución completa para grandes organizaciones.</p>
+                  <ul class="items-plans">
+                    <li>Todo lo del plan Centinela Pro</li>
+                    <li>Cifrado de datos corporativos</li>
+                    <li>Gestor de cuenta dedicado</li>
+                    <li>SLA garantizado</li>
+                  </ul>
+                </div>
+                <a class="btn price-btn" href="">Contratarlo ahora</a>
+              </article>
+            </section>
           </div>
-        </div>
-      </section>
-      <section class="blog-section">
-        <div class="blog-section-content">
-          <span class="badge-element">Lo nuevo</span>
-          <h2 class="titles-section">
-            Entérate de las últimas novedades que
-            <span class="main-hero-span">ShieldSecurity</span> tiene para ti
-          </h2>
-          <p class="description-text-section">
-            Aprende a detectar, prevenir y defenderte de amenazas digitales con
-            información clara, actualizada y práctica para proteger lo que más
-            importa.
-          </p>
-          <div class="blog-grid-section">
-            <div class="blog-post blog-grid-element">
-              <img src="./assets/post-img.png" alt="" />
-              <h3>
-                Inditex, Booking y Basic-Fit: Hackeo y robo de información de
-                usuarios
-              </h3>
-              <p>
-                Ciberataques recientes han expuesto datos masivos, evidenciando
-                fallos de seguridad a nivel global. Datos personales y
-                financieros en la mira de los hackers.
-              </p>
-              <a class="btn info-btn" href="">Leer más</a>
-            </div>
-            <div class="blog-page-link blog-grid-element">
-              <h2>Blog</h2>
-              <p>
-                Más noticias, consejos y novedades sobre el mundo de la
-                ciberseguridad en nuestra sección
-              </p>
-              <a class="btn std-btn" href="">Visitar el blog</a>
-            </div>
-            <div class="blog-services-link blog-grid-element">
-              <h3>¡Protégete ante ciberataques!</h3>
-              <p>
-                No esperes a ser una víctima más, toma el control y mantente un
-                paso adelante.
-              </p>
-              <a class="btn info-btn" href="">Contratar</a>
-            </div>
-          </div>
-        </div>
-      </section>
+        </section>
+      </div>
     </main>
     <footer></footer>
   </body>
