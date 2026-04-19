@@ -248,7 +248,7 @@ nav ul li:hover {
   display: flex;
   justify-content: space-between;
   background-color: var(--bg-blur-element);
-  border: 1px solid #ffffff;
+  border: 1px solid var(--color-secondary-text);
   align-items: center;
   position: relative;
   transition: var(--std-transition);

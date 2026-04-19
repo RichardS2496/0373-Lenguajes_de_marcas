@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog | ShieldSecurity</title>
+    <link rel="stylesheet" href="/styles/blog.css" />
+    <link rel="stylesheet" href="/styles/posts.css" />
+    <script
+      src="https://kit.fontawesome.com/fa9f723a50.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+    </style>
+  </head>
+  <body>
+    <header>
+      <a href="#" class="logo-header"
+        ><img src="./assets/logo.svg" alt="" />
+        <div class="text-logo">
+          <span>ShieldSecurity</span><br />
+          CiberSeguridad
+        </div></a
+      >
+      <nav>
+        <ul>
+          <li><a href="/#inicio">Inicio</a></li>
+          <li><a href="../blog.html">Blog</a></li>
+          <li><a href="/#servicios">Servicios</a></li>
+          <li><a href="/#nosotros">Nosotros</a></li>
+          <li><a href="/#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+      <a
+        class="icons"
+        target="_blank"
+        href="/https://github.com/RichardS2496/0373-Lenguajes_de_marcas"
+        ><i class="fa-brands fa-square-github fa-2xl"></i
+      ></a>
+      <button class="btn-responsive" id="btn-responsive" href="#">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="32px"
+          height="32px"
+          viewBox="0 0 24 24"
+          fill="none"
+        >
+          <path
+            d="M4 18L20 18"
+            stroke="#000000"
+            stroke-width="2"
+            stroke-linecap="round"
+          />
+          <path
+            d="M4 12L20 12"
+            stroke="#000000"
+            stroke-width="2"
+            stroke-linecap="round"
+          />
+          <path
+            d="M4 6L20 6"
+            stroke="#000000"
+            stroke-width="2"
+            stroke-linecap="round"
+          />
+        </svg>
+      </button>
+    </header>
+    <main>
+      <div class="bg-layout"></div>
+      <div class="main-layout">
+        <section class="blog-section">
+          <div class="blog-section-content">
+            <span class="badge-element">Noticias</span>
+            <h2 class="titles-section">
+              Inditex, Booking y Basic-Fit: Hackeo y robo de información de
+              usuarios
+            </h2>
+            <div class="post-content">
+              <div class="post-meta">
+                <span class="post-date">
+                  <i class="fa-regular fa-calendar"></i> 14 de abril de 2026
+                </span>
+                <span class="post-author">
+                  <i class="fa-regular fa-user"></i> ShieldSecurity
+                </span>
+              </div>
+              <img src="../assets/post-img2.png" alt="Hackeo masivo a Inditex, Booking y Basic-Fit" />
+              <p class="post-lead">
+                Tres grandes empresas europeas han sido víctimas de brechas de
+                seguridad en las últimas semanas. Millones de usuarios afectados
+                ven comprometidos sus datos personales, financieros y de acceso.
+              </p>
+
+              <h3 class="post-subtitle">Inditex: datos de clientes de Zara y Pull&Bear filtrados</h3>
+              <p>
+                El grupo textil Inditex confirmó en marzo de 2026 que un atacante
+                logró acceder a su plataforma de comercio electrónico mediante
+                una vulnerabilidad en su sistema de autenticación. La brecha
+                afectó a más de <strong>4,5 millones de clientes</strong> en
+                Europa y América Latina, exponiendo nombres, correos
+                electrónicos, direcciones de envío e historial de compras.
+              </p>
+              <p>
+                Según los investigadores, el grupo detrás del ataque utilizó una
+                técnica de <em>credential stuffing</em>, aprovechando contraseñas
+                filtradas de otras plataformas para acceder a cuentas activas.
+                Inditex tardó más de 72 horas en detectar la intrusión y notificar
+                a los usuarios, lo que prolongó la ventana de exposición.
+              </p>
+
+              <h3 class="post-subtitle">Booking.com: reservas y tarjetas bancarias en riesgo</h3>
+              <p>
+                La popular plataforma de reservas de alojamiento sufrió un ataque
+                de ingeniería social dirigido a su red de hoteles asociados. Los
+                ciberdelincuentes suplantaron la identidad de soporte técnico de
+                Booking para engañar a empleados de establecimientos y obtener
+                credenciales de acceso al panel de gestión.
+              </p>
+              <p>
+                Una vez dentro, los atacantes redirigieron las comunicaciones con
+                huéspedes para solicitar pagos fraudulentos. Se estima que más de
+                <strong>900.000 usuarios</strong> recibieron mensajes falsos con
+                enlaces a páginas de pago clonadas. Algunos llegaron a introducir
+                datos de tarjeta bancaria en esas páginas antes de que Booking
+                bloqueara las cuentas comprometidas.
+              </p>
+
+              <h3 class="post-subtitle">Basic-Fit: contraseñas y datos de salud expuestos</h3>
+              <p>
+                La cadena de gimnasios Basic-Fit reportó un acceso no autorizado
+                a su base de datos de miembros. La brecha expuso información
+                especialmente sensible: nombre completo, fecha de nacimiento,
+                número de teléfono, dirección y, en algunos casos, datos sobre
+                condiciones médicas declaradas al contratar ciertos planes.
+              </p>
+              <p>
+                La investigación apunta a un fallo en una API interna que no
+                requería autenticación para devolver registros de usuarios. El
+                error estuvo activo durante varios meses antes de ser descubierto
+                por un investigador de seguridad externo que lo reportó de forma
+                responsable.
+              </p>
+
+              <h3 class="post-subtitle">¿Qué debes hacer si eres usuario de alguna de estas plataformas?</h3>
+              <ul class="post-list">
+                <li>Cambia tu contraseña inmediatamente y no reutilices la misma en otros servicios.</li>
+                <li>Activa la verificación en dos pasos (2FA) en todas las cuentas que lo permitan.</li>
+                <li>Revisa los movimientos de tu tarjeta bancaria y reporta cualquier cargo sospechoso.</li>
+                <li>Desconfía de correos o mensajes que soliciten datos o pagos urgentes, aunque parezcan legítimos.</li>
+                <li>Usa un gestor de contraseñas para mantener credenciales únicas y seguras en cada servicio.</li>
+              </ul>
+
+              <p class="post-closing">
+                Estos incidentes refuerzan la necesidad de que tanto empresas como
+                usuarios adopten medidas de ciberseguridad proactivas. La pregunta
+                ya no es <em>si</em> ocurrirá un ataque, sino <em>cuándo</em>. Estar
+                preparado marca la diferencia.
+              </p>
+            </div>
+          </div>
+        </section>
+        <div class="blog-services-link">
+          <h3>¡Protégete ante ciberataques!</h3>
+          <p>
+            No esperes a ser una víctima más, toma el control y mantente un paso
+            adelante.
+          </p>
+          <a class="btn info-btn" href="/#servicios">Contratar</a>
+        </div>
+      </div>
+    </main>
+    <footer class="footer-section">
+      <div class="footer-section-content">
+        <img src="./assets/logo.svg" alt="" />
+        <div class="text-footer-logo">
+          <span>ShieldSecurity</span><br />
+          CiberSeguridad
+        </div>
+        <p>
+          Todos los derechos reservados 2026 |
+          <a href="https://github.com/RichardS2496/0373-Lenguajes_de_marcas"
+            >Repositorio Intermodular LM</a
+          >
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
