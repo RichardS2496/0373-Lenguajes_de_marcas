@@ -772,11 +772,6 @@ button:hover {
   color: var(--color-primary-text);
 }
 
-.footer-section-content img {
-  width: 40px;
-  fill: #ffffff;
-  color: #fff;
-}
 
 .footer-section-content p {
   text-align: center;
@@ -833,7 +828,7 @@ button:hover {
   }
 
   .titles-section {
-    font-size: 2rem;
+    font-size: 1.75rem;
     line-height: 2.5rem;
   }
 
@@ -944,5 +939,9 @@ button:hover {
   }
   .form-section {
     padding: 1rem;
+  }
+
+  .review-section p {
+    width: 95%;
   }
 }
