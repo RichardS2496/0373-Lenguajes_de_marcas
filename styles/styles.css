@@ -772,7 +772,6 @@ button:hover {
   color: var(--color-primary-text);
 }
 
-
 .footer-section-content p {
   text-align: center;
 }
@@ -784,6 +783,31 @@ button:hover {
 .text-footer-logo {
   color: var(--color-primary-text);
   text-align: center;
+}
+.header-mobile {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .header-mobile {
+    display: flex;
+    position: fixed;
+    inset: 0;
+    z-index: 12;
+    background-color: var(--color-primary);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 1rem;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+    pointer-events: none;
+  }
+
+  .header-mobile.open {
+    transform: translateX(0);
+    pointer-events: auto;
+  }
 }
 
 @media (max-width: 1024px) {
@@ -818,6 +842,44 @@ button:hover {
 }
 
 @media (max-width: 768px) {
+  .cierre-menu {
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    padding: 0.5rem;
+    color: var(--color-primary-text);
+    border: 1px solid var(--color-secondary-text);
+    border-radius: var(--border-std);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bg-blur-header-element);
+  }
+
+  .header-mobile nav {
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .header-mobile ul {
+    /* display: none; */
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  .header-mobile ul li a {
+    font-size: var(--fs-sm);
+    text-shadow: var(--std-text-shadow);
+  }
+
   h1 {
     font-size: 2.5rem;
     line-height: 3rem;
@@ -825,6 +887,10 @@ button:hover {
 
   h2 {
     font-size: 2rem;
+  }
+
+  .blog-grid-section h3 {
+    font-size: 1.75rem;
   }
 
   .titles-section {
@@ -844,6 +910,12 @@ button:hover {
 
   .btn-responsive {
     display: flex;
+    border: 1px solid var(--color-secondary-text);
+    padding: 0.5rem;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--bg-blur-element);
+    border-radius: var(--border-std);
   }
 
   .main-layout {
@@ -852,7 +924,7 @@ button:hover {
 
   .main-hero {
     height: 80vh;
-    padding-top: 5rem;
+    padding-top: 6rem;
     padding-bottom: 2rem;
   }
 
